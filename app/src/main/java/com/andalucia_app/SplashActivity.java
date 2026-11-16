@@ -1,40 +1,29 @@
 package com.andalucia_app;
 
-import android.animation.Animator;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import androidx.appcompat.app.AppCompatActivity;
-import com.airbnb.lottie.LottieAnimationView;
 
 public class SplashActivity extends AppCompatActivity {
+    private final Handler handler = new Handler(Looper.getMainLooper());
+    private final Runnable openMain = () -> {
+        if (isFinishing() || isDestroyed()) return;
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        finish();
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        handler.postDelayed(openMain, 1000);
+    }
 
-        LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimationView);
-
-        // Escuchamos los eventos de la animación
-        lottieAnimationView.addAnimatorListener(new Animator.AnimatorListener() {
-            @Override
-            public void onAnimationStart(Animator animation) {
-                // no hacemos nada al empezar
-            }
-
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                // Al terminar la animación, pasamos a la MainActivity
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish(); // Cerramos esta activity para que el usuario no pueda volver al splash con el botón "Atrás"
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animation) {}
-
-            @Override
-            public void onAnimationRepeat(Animator animation) {}
-        });
+    @Override
+    protected void onDestroy() {
+        handler.removeCallbacks(openMain);
+        super.onDestroy();
     }
 }
