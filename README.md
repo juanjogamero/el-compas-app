@@ -20,6 +20,20 @@ IES Francisco Rodríguez Marín · Osuna, Sevilla · DAM 2025–2026
 
 ---
 
+<div align="center">
+
+### [Explorar El Compás — presentación interactiva](https://juanjogamero.github.io/el-compas-app/)
+
+**Web de presentación con capturas originales de la aplicación Android.**
+
+[Ver código de la presentación](docs/index.html) · [GitHub Pages (pendiente de activar)](https://github.com/juanjogamero/el-compas-app/settings/pages)
+
+> **Importante:** la web es una presentación visual. El Compás es una aplicación Android nativa en Java; no funciona como aplicación web ni reproduce el contenido multimedia desde GitHub Pages. Para publicar la presentación hay que seleccionar **GitHub Actions** en Settings → Pages y verificar que el workflow termine correctamente.
+
+</div>
+
+---
+
 ## 📖 Tabla de Contenidos
 
 1. [Descripción del Proyecto](#-descripción-del-proyecto)
@@ -689,8 +703,8 @@ dependencies {
 
 ```bash
 # 1. Clona el repositorio
-git clone https://github.com/Ecentia/el-compas.git
-cd el-compas
+git clone https://github.com/juanjogamero/el-compas-app.git
+cd el-compas-app
 
 # 2. Abre en Android Studio
 # File → Open → selecciona la carpeta raíz del proyecto
