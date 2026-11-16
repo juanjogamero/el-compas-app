@@ -58,14 +58,14 @@
     <!-- ══════════════════════════════════════════════════════════
          FRAGMENT INICIO — Sección autores
          ══════════════════════════════════════════════════════════ -->
-    <string name="autores_seccion_tag">Proyecto DAM</string>
-    <string name="autores_instituto">IES Francisco Rodríguez Marín</string>
-    <string name="autores_localidad">Osuna, Sevilla</string>
-    <string name="autor_1_nombre">Juan José Gamero López</string>
-    <string name="autor_2_nombre">José Manuel Jiménez Rodríguez</string>
-    <string name="autor_3_nombre">Rafael Lázaro Díaz</string>
-    <string name="autores_ciclo">Desarrollo de Aplicaciones Multiplataforma</string>
-    <string name="autores_curso">Curso 2025–2026 · DAM</string>
+    <string name="autores_seccion_tag">EL COMPÁS</string>
+    <string name="autores_instituto">Cultura andaluza</string>
+    <string name="autores_localidad">Historia, música y arte</string>
+    <string name="autor_1_nombre">Personajes</string>
+    <string name="autor_2_nombre">Sonidos y vídeos</string>
+    <string name="autor_3_nombre">Animaciones</string>
+    <string name="autores_ciclo">Explora Andalucía</string>
+    <string name="autores_curso">Versión 1.0</string>
 
     <!-- ══════════════════════════════════════════════════════════
          FRAGMENT PERSONAJES
