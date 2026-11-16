@@ -47,7 +47,7 @@ public class AnimacionesFragment extends Fragment {
         if (adapter != null) adapter.pauseAll();
     }
 
-    // Lista de las 5 animaciones
+    // Catálogo de animaciones
     private List<Animacion> crearListaAnimaciones() {
         List<Animacion> lista = new ArrayList<>();
 
@@ -56,14 +56,6 @@ public class AnimacionesFragment extends Fragment {
                 "Beso de hermanos.",
                 "Amor",
                 R.raw.beso_apasionado
-        ));
-
-
-        lista.add(new Animacion(
-                "Ecentia",
-                "Ecentia Manda.",
-                "Poder",
-                R.raw.ecentia_splash
         ));
 
         lista.add(new Animacion(
